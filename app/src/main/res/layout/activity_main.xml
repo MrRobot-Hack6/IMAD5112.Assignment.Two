@@ -5,15 +5,82 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7E0592"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btnHack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FDFCFC"
+        android:text="Hack"
+        android:textColor="#100101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayQuestion" />
+
+    <Button
+        android:id="@+id/btnMyth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FDFCFC"
+        android:text="Myth"
+        android:textColor="#100101"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayQuestion" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FDFCFC"
+        android:text="Back"
+        android:textColor="#100101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMyth" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Hack or Myth Quiz Game"
+        android:textColor="#090000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDisplayQuestion"
+        android:layout_width="384dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:text="Question Display"
+        android:textAlignment="center"
+        android:textColor="#050000"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FDFCFC"
+        android:text="Next"
+        android:textColor="#100101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHack" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

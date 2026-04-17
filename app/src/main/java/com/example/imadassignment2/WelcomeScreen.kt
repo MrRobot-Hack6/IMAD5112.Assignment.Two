@@ -2,28 +2,21 @@ package com.example.imadassignment2
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
-    lateinit var txtDisplayQuestion : TextView
-    lateinit var btnHack : Button
-    lateinit var btnMyth : Button
-    lateinit var btnNext : Button
-    lateinit var btnBack : Button
+class WelcomeScreen : AppCompatActivity() {
+
+    lateinit var btnStart : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_welcome_screen)
 
-        txtDisplayQuestion = findViewById(R.id.txtDisplayQuestion)
-        btnHack = findViewById(R.id.btnHack)
-        btnMyth = findViewById(R.id.btnMyth)
-        btnNext = findViewById(R.id.btnNext)
-        btnBack = findViewById(R.id.btnBack)
+        btnStart = findViewById(R.id.btnStart)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

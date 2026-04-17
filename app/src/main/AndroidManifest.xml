@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IMADAssignment2">
         <activity
+            android:name=".ScoreScreen"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
