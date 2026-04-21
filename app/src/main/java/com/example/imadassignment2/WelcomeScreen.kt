@@ -1,5 +1,6 @@
 package com.example.imadassignment2
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -17,6 +18,12 @@ class WelcomeScreen : AppCompatActivity() {
         setContentView(R.layout.activity_welcome_screen)
 
         btnStart = findViewById(R.id.btnStart)
+
+        btnStart.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
