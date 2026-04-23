@@ -9,40 +9,16 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnHack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#FDFCFC"
-        android:text="Hack"
-        android:textColor="#100101"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDisplayQuestion" />
-
-    <Button
-        android:id="@+id/btnMyth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:backgroundTint="#FDFCFC"
-        android:text="Myth"
-        android:textColor="#100101"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDisplayQuestion" />
-
-    <Button
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#FDFCFC"
         android:text="Back"
         android:textColor="#100101"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMyth" />
+        app:layout_constraintStart_toEndOf="@+id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/rbGroup" />
 
     <TextView
         android:id="@+id/textView"
@@ -58,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtDisplayQuestion"
+        android:id="@+id/txtQuestion"
         android:layout_width="384dp"
         android:layout_height="173dp"
         android:layout_marginStart="14dp"
@@ -75,12 +51,38 @@
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#FDFCFC"
         android:text="Next"
         android:textColor="#100101"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnHack" />
+        app:layout_constraintTop_toBottomOf="@+id/rbGroup" />
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion">
+
+        <RadioButton
+            android:id="@+id/rbMyth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Myth"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <RadioButton
+            android:id="@+id/rbHack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hack"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

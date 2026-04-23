@@ -22,9 +22,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtDisplayScore"
+        android:id="@+id/txtScore"
         android:layout_width="383dp"
-        android:layout_height="223dp"
+        android:layout_height="60dp"
         android:layout_marginStart="13dp"
         android:layout_marginTop="30dp"
         android:text="Score"
@@ -36,12 +36,49 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/btnReturnMain"
+        android:id="@+id/btnReturn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="30dp"
-        android:text="Return to main menu"
+        android:layout_marginStart="199dp"
+        android:layout_marginTop="25dp"
+        android:text="Back"
+        app:layout_constraintStart_toEndOf="@+id/btnReview"
+        app:layout_constraintTop_toBottomOf="@+id/txtReviewDisplay" />
+
+    <TextView
+        android:id="@+id/txtCorrect"
+        android:layout_width="383dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:text="Correct answers:"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDisplayScore" />
+        app:layout_constraintTop_toBottomOf="@+id/txtScore" />
+
+    <TextView
+        android:id="@+id/txtReviewDisplay"
+        android:layout_width="379dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:text="Review:                                "
+        android:textAlignment="center"
+        android:textColor="#040404"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorrect" />
+
+    <Button
+        android:id="@+id/btnReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25dp"
+        android:text="Review"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReviewDisplay" />
 </androidx.constraintlayout.widget.ConstraintLayout>
