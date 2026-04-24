@@ -1,3 +1,4 @@
+
 # Hack or Myth Quiz Game
 ## Myth or hack? You decide. This is a simple implementation of the IMAD instruction in Kotlin.
 This is a simple implementation of the IMAD instruction in Kotlin.
@@ -15,6 +16,20 @@ The main page displays questions related to myths and hacks, and the user's scor
 The result page shows the final score and provides feedback based on the user's performance.
 
 ## Github Logs
+
+[system.txt](https://github.com/user-attachments/files/27049075/system.txt)
+
+[1_Set up job.txt](https://github.com/user-attachments/files/27049076/1_Set.up.job.txt)
+
+[2_Run actions_checkout@v4.txt](https://github.com/user-attachments/files/27049077/2_Run.actions_checkout%40v4.txt
+
+[3_Run a one-line script.txt](https://github.com/user-attachments/files/27049078/3_Run.a.one-line.script.txt)
+
+[4_Run a multi-line script.txt](https://github.com/user-attachments/files/27049069/4_Run.a.multi-line.script.txt)
+
+[8_Post Run actions_checkout@v4.txt](https://github.com/user-attachments/files/27049070/8_Post.Run.actions_checkout%40v4.txt)
+
+[9_Complete job.txt](https://github.com/user-attachments/files/27049071/9_Complete.job.txt)
 
 ## Screenshots of app
 
