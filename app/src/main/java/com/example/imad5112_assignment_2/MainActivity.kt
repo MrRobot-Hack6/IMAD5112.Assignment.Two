@@ -1,5 +1,5 @@
 //Main page
-package com.example.imadassignment2
+package com.example.imad5112_assignment_2
 
 import android.content.Intent
 import android.os.Bundle
@@ -84,6 +84,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
+        }
+
+        btnBack.setOnClickListener {
+            val intent = Intent(this, WelcomeScreen::class.java)
+            startActivity(intent)
+            finish()
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
