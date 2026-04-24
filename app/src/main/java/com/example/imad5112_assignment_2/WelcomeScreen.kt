@@ -27,9 +27,9 @@ class WelcomeScreen : AppCompatActivity() {
         // Setting an onClickListener to the button to navigate to the MainActivity when clicked
 
         btnStart.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
+            val intent = Intent(this, MainActivity::class.java) //(GeeksforGeeks, 2024)
+            startActivity(intent) //(GeeksforGeeks, 2024)
+            finish() //(GeeksforGeeks, 2024)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

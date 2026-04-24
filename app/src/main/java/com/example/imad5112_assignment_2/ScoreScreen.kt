@@ -64,9 +64,9 @@ class ScoreScreen : AppCompatActivity() {
 
         // Setting an onClickListener for the return button to navigate back to the WelcomeScreen
         btnReturn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
+            val intent = Intent(this, MainActivity::class.java) //(GeeksforGeeks, 2024)
+            startActivity(intent) //(GeeksforGeeks, 2024)
+            finish() //(GeeksforGeeks, 2024)
         }
 
         // Setting an onClickListener for the review button to display the questions and their corresponding answers in the txtReviewDisplay TextView
